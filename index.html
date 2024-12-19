@@ -3,345 +3,397 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
     <title>DevStudio</title>
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html"><span>Dev</span>Studio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+      <div class="container">
+        <nav>
+          <a class="logo" href="#'">Dev<span>Studio</span></a>
+          <ul class="site-links items">
+            <li><a class="link navbar" href="#">Про нас</a></li>
+            <li>
+              <a class="link navbar" href="#">Портфоліо</a>
+            </li>
+            <li>
+              <a class="link navbar" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="items con">
+          <li>
+            <a class="link contact-info" href="mailto:info@devstudio.com">
+              <svg class="icon-set" width="16" height="12">
+                <use xlink:href="images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="link contact-info" href="tel:+380680000000">
+              <svg class="icon-set" width="10" height="16">
+                <use xlink:href="images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 068 000 00 00
+            </a>
+          </li>
         </ul>
-      </nav>
-
-      <ul class="contacts">
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <svg width="16" height="12">
-              <use xlink:href="images/sprite.svg#envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380000000000">
-            <svg width="10" height="16">
-              <use xlink:href="images/sprite.svg#smartphone"></use>
-            </svg>
-            +38 000 000 00 00
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section class="с01">
-        <h1>Ми створюємо легкі рішення складних завдань для вашого бізнеса</h1>
-        <button type="button">Замовити послугу</button>
+      <section class="banner">
+        <div class="container">
+          <h1 class="title-main">
+            Ми створюємо легкі рішення<br />
+            складних завдань для вашого бізнеса
+          </h1>
+          <button class="button" type="button">Замовити послугу</button>
+        </div>
       </section>
 
-      <section class="pref">
-        <ul>
-          <li>
-            <svg width="70" height="70">
-              <use xlink:href="images/sprite.svg#antenna"></use>
-            </svg>
-            <h3>Увага до деталей</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", що часто використовується у
-              веб-дизайні.
-            </p>
-          </li>
-          <li>
-            <svg width="70" height="70">
-              <use xlink:href="images/sprite.svg#clock"></use>
-            </svg>
-            <h3>Пунктуальність</h3>
-            <p>
-              Lorem Ipsum є стандартною "рибою" для текстів на латиниці з
-              початку XVI століття.
-            </p>
-          </li>
-          <li>
-            <svg width="70" height="70">
-              <use xlink:href="images/sprite.svg#diagram"></use>
-            </svg>
-            <h3>Планування</h3>
-            <p>
-              Lorem Ipsum - це текст-"риба", що часто використовується у
-              веб-дизайні.
-            </p>
-          </li>
-          <li>
-            <svg width="70" height="70">
-              <use xlink:href="images/sprite.svg#astronaut"></use>
-            </svg>
-            <h3>Сучасні технології</h3>
-            <p>
-              Lorem Ipsum є стандартною "рибою" для текстів на латиниці з
-              початку XVI століття.
-            </p>
-          </li>
-        </ul>
+      <section class="section-padding features">
+        <div class="container">
+          <ul class="items">
+            <li>
+              <div class="feature-icon">
+                <svg class="icon" width="70" height="70">
+                  <use xlink:href="images/sprite.svg#antenna"></use>
+                </svg>
+              </div>
+              <h3 class="feature-heading">Увага до деталей</h3>
+              <p class="feature-description">
+                Lorem Ipsum - це текст-"риба", що часто використовується у
+                веб-дизайні.
+              </p>
+            </li>
+            <li>
+              <div class="feature-icon">
+                <svg class="icon" width="70" height="70">
+                  <use xlink:href="images/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature-heading">Пунктуальність</h3>
+              <p class="feature-description">
+                Lorem Ipsum є стандартною "рибою" для текстів на латиниці з
+                початку XVI століття.
+              </p>
+            </li>
+            <li>
+              <div class="feature-icon">
+                <svg class="icon" width="70" height="70">
+                  <use xlink:href="images/sprite.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="feature-heading">Планування</h3>
+              <p class="feature-description">
+                Lorem Ipsum - це текст-"риба", що часто використовується у
+                веб-дизайні.
+              </p>
+            </li>
+            <li>
+              <div class="feature-icon">
+                <svg class="icon" width="70" height="70">
+                  <use xlink:href="images/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="feature-heading">Сучасні технології</h3>
+              <p class="feature-description">
+                Lorem Ipsum є стандартною "рибою" для текстів на латиниці з
+                початку XVI століття.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2 class="spec">Роботи на яких спеціалізуємось</h2>
-        <ul>
-          <li>
-            <img
-              class="roundimg"
-              src="images/img1.jpg"
-              width="370"
-              height="294"
-              alt="Код"
-            />
-          </li>
-          <li>
-            <img
-              class="roundimg"
-              src="images/img3.jpg"
-              width="370"
-              height="294"
-              alt="Команда"
-            />
-          </li>
-          <li>
-            <img
-              class="roundimg"
-              src="images/img2.jpg"
-              width="370"
-              height="294"
-              alt="Робоче місце"
-            />
-          </li>
-        </ul>
+      <section class="section-padding specs">
+        <div class="container">
+          <h2 class="section-heading">Роботи на яких спеціалізуємось</h2>
+          <ul class="items">
+            <li class="overlay">
+              <img
+                class="roundimg"
+                src="images/img1.jpg"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="overlay">
+              <img
+                class="roundimg"
+                src="images/img3.jpg"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="overlay">
+              <img
+                class="roundimg"
+                src="images/img2.jpg"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="team">
-        <h2>Наша команда</h2>
-        <ul>
-          <li class="member">
-            <img
-              src="images/betі.jpg"
-              width="270"
-              height="260"
-              alt="Betty Foriz"
-            />
-            <p class="name">Betty Foriz</p>
-            <p class="post">Product Designer</p>
-            <ul>
-              <li>
-                <a href="https://instagram.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://facebook.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="member">
-            <img
-              src="images/folke.jpg"
-              width="270"
-              height="260"
-              alt="Folke Booke"
-            />
-            <p class="name">Folke Booke</p>
-            <p class="post">Frontend Developer</p>
-            <ul>
-              <li>
-                <a href="https://instagram.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://facebook.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="member">
-            <img
-              src="images/mitto.jpg"
-              width="270"
-              height="260"
-              alt="Mito Dito"
-            />
-            <p class="name">Mito Dito</p>
-            <p class="post">Marketing</p>
-            <ul>
-              <li>
-                <a href="https://instagram.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://facebook.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="member">
-            <img
-              src="images/lea.jpg"
-              width="270"
-              height="260"
-              alt="Loa Spetnaz"
-            />
-            <p class="name">Loa Spetnaz</p>
-            <p class="post">UI Designer</p>
-            <ul>
-              <li>
-                <a href="https://instagram.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://facebook.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/">
-                  <svg width="20" height="20">
-                    <use xlink:href="images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <section class="section-padding team">
+        <div class="container">
+          <h2 class="section-heading">Наша команда</h2>
+          <ul class="items team-members">
+            <li class="teammate">
+              <img src="images/betі.jpg" width="270" height="260" alt="Betty" />
+              <div class="teambox">
+                <h3 class="name">Betty Foriz</h3>
+                <p class="post">Product Designer</p>
+                <ul class="items social-links">
+                  <li>
+                    <a href="https://instagram.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="teammate">
+              <img
+                src="images/folke.jpg"
+                width="270"
+                height="260"
+                alt="Folke"
+              />
+              <div class="teambox">
+                <h3 class="name">Folke Booke</h3>
+                <p class="post">Frontend Developer</p>
+                <ul class="items social-links">
+                  <li>
+                    <a href="https://instagram.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="teammate">
+              <img
+                src="images/mitto.jpg"
+                width="270"
+                height="260"
+                alt="Mitto"
+              />
+              <div class="teambox">
+                <h3 class="name">Mito Dito</h3>
+                <p class="post">Marketing</p>
+                <ul class="items social-links">
+                  <li>
+                    <a href="https://instagram.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="teammate">
+              <img src="images/lea.jpg" width="270" height="260" alt="Lea" />
+              <div class="teambox">
+                <h3 class="name">Loa Spetnaz</h3>
+                <p class="post">UI Designer</p>
+                <ul class="items social-links">
+                  <li>
+                    <a href="https://instagram.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="flogo" href="./index.html"><span>Dev</span>Studio</a>
-      <address class="adres">
-        м. Харків, вул. Ярослава Мудрого, 18
-        <ul>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a href="tel:+380000000000">+38 000 000 00 00</a>
-        </ul>
-      </address>
-      <p>Приєднуйтесь</p>
-      <ul>
-        <li>
-          <a href="https://instagram.com/">
-            <svg width="20" height="20">
-              <use xlink:href="images/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/">
-            <svg width="20" height="20">
-              <use xlink:href="images/sprite.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://facebook.com/">
-            <svg width="20" height="20">
-              <use xlink:href="images/sprite.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/">
-            <svg width="20" height="20">
-              <use xlink:href="images/sprite.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p>Підпишись на розсилку</p>
-      <form><input class="f1" type="email" placeholder="E-mail" /></form>
-      <button type="submit">
-        Підписатись
-        <svg width="24" height="24">
-          <use xlink:href="images/sprite.svg#subscribe"></use>
-        </svg>
-      </button>
+      <div class="container">
+        <div class="address-container">
+          <a class="logo" href="./index.html">Dev<span>Studio</span></a>
+          <address class="contact-details">
+            <p>м. Харків, вул. Ярослава Мудрого, 18</p>
+            <ul class="items">
+              <li class="email-adress">
+                <a class="link contact-info" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="link contact-info" href="tel:+380680000000"
+                  >+38 068 000 00 00</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="link-footer">
+          <h2 class="join-us">Приєднуйтесь</h2>
+          <ul class="items link-group">
+            <li>
+              <a href="https://instagram.com/">
+                <svg class="icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <svg class="icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/">
+                <svg class="icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/">
+                <svg class="icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscription">
+          <h2>Підпишись на розсилку</h2>
+          <form class="form-input" autocomplete="off">
+            <label for="email-form"></label>
+            <input
+              type="email"
+              name="email-form"
+              id="email-form"
+              class="input-placeholde"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="submit-button">
+              Підписатись
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="images/sprite.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
